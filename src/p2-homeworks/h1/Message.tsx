@@ -8,7 +8,7 @@ type PropsType = {
     time: string
 }
 
-export const Message = (props: PropsType) => {
+export const Message: React.FC<PropsType> = (props) => {
     return (
         <div className={styles.messageWrapper}>
             <img src={props.avatar} alt="avatar"/>
