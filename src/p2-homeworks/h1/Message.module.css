@@ -1,0 +1,41 @@
+.messageWrapper{
+    display: flex;
+    background-color: #8da9c2;
+    padding: 50px;
+    gap: 20px;
+    align-items: flex-end;
+}
+
+.messageWrapper img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+.message {
+    width: 250px;
+    background-color: darkcyan;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    position:relative;
+}
+.message:before{
+    position:absolute;
+    content:"";
+    left:-14px;
+    bottom:10px;
+    transform: scaleY(0.5) rotate(45deg);
+    width:30px;
+    height:30px;
+    background-color: darkcyan;
+}
+.name {
+    color: #bcb0d9;
+}
+.time{
+    color: aquamarine;
+    text-align: right;
+    font-size: 14px;
+}
+
+
