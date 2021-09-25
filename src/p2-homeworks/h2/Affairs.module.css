@@ -1,3 +1,23 @@
-.someClass {
+.affairs{
+    display: flex;
+    gap: 8px;
+}
+.affair {
+    background-color: #97dcdc;
+    border-radius: 8px;
+    padding: 5px;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 10px;
+}
 
+.deleteBtn {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #ec4d4d;
+}
+.filterBtn {
+    margin-right: 5px;
+    border-radius: 5px;
+    background-color: #ffff93;
 }

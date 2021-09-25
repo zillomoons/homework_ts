@@ -25,7 +25,7 @@ function HW1() {
 
             <hr/>
             {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeMessage/>*/}
+            {/*<AlternativeMessage />*/}
             <hr/>
         </div>
     )
