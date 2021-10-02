@@ -1,4 +1,4 @@
-import React, {ChangeEvent, useState} from 'react'
+import React, {ChangeEvent, FocusEvent, useState} from 'react'
 import Greeting from './Greeting'
 import {UserType} from "./HW3";
 
@@ -23,12 +23,15 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
         if (name === ''){
             setError('Enter your name please')
         } else {
-            setError('')
+            // setError('')
             addUserCallback(name)
             alert(`Hello ${name}!`) // need to fix
             setName('')
         }
 
+    }
+    const clearError = (e: FocusEvent<HTMLInputElement>) => {
+        setError('')
     }
 
     const totalUsers = users.length // need to fix
@@ -40,6 +43,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
             addUser={addUser}
             error={error}
             totalUsers={totalUsers}
+            clearError={clearError}
         />
     )
 }
