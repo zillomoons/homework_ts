@@ -1,9 +1,11 @@
 .affairs{
     display: flex;
     gap: 8px;
+    justify-content: space-around;
+    width: 500px;
 }
 .affair {
-    background-color: #97dcdc;
+    border: 1px solid #97dcdc;
     border-radius: 8px;
     padding: 5px;
     width: 200px;
@@ -19,5 +21,25 @@
 .filterBtn {
     margin-right: 5px;
     border-radius: 5px;
-    background-color: #ffff93;
+    background-color: aliceblue;
+    margin-right: 5px;
+}
+.activeBtn {
+    background: #61dafb;
+}
+.priority{
+    display: flex;
+    align-self: center;
+    font-size: 15px;
+    width: 100px;
+    text-align: center;
+}
+.low {
+    color: limegreen;
+}
+.middle {
+    color: orange;
+}
+.high {
+    color: red;
 }
