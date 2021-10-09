@@ -21,9 +21,9 @@
     position:relative;
 }
 .angle {
-    height: 15px;
-    width: 15px;
-    background: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0) 15px, rgba(0, 139, 139, 0.5) 0);
+    height: 20px;
+    width: 20px;
+    background: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0) 20px, rgba(0, 139, 139, 0.5) 0);
 }
 /*.message:before{*/
 /*    position:absolute;*/
