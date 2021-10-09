@@ -24,6 +24,8 @@ input {
     padding: 4px 16px;
     font-size: 18px;
     color: white;
-    text-transform: none;
-
+}
+.addBtn:disabled {
+    background-color: #8da9c2;
+    cursor: default;
 }

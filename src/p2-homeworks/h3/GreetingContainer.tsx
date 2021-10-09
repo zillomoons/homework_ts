@@ -3,7 +3,7 @@ import Greeting from './Greeting'
 import {UserType} from "./HW3";
 
 type GreetingContainerPropsType = {
-    users: Array<UserType> // need to fix any
+    users: UserType[] // need to fix any
     addUserCallback: (name: string) => void // need to fix any
 }
 
@@ -17,25 +17,28 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
     const [error, setError] = useState<boolean>(false) // need to fix any
 
     const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => { // need to fix any
-        setName(e.currentTarget.value.trim()) // need to fix
+        const trimmedName = e.currentTarget.value.trim();
+        if (trimmedName) {
+            setName(trimmedName)
+            error && setError(false)
+        } else {
+            name && setName('')
+            setError(true)
+        }
+        // need to fix
     }
     const addUser = () => {
-        if (name === ''){
-            setError(true)
-        } else {
-            addUserCallback(name)
-            alert(`Hello ${name}!`) // need to fix
-            setName('')
-        }
+        addUserCallback(name)
+        alert(`Hello ${name}!`) // need to fix
+        setName('')
     }
     const addUserWithEnter = (e: KeyboardEvent<HTMLInputElement>) => {
-       if(e.key === 'Enter'){
-           addUser()
-       }
+        // error && setError(false);
+        if (e.key === 'Enter') {
+            addUser()
+        }
     }
-    const clearError = (e: FocusEvent<HTMLInputElement>) => {
-        setError(false)
-    }
+    // const clearError = (e: FocusEvent<HTMLInputElement>) => setError(false);
 
     const totalUsers = users.length // need to fix
 
@@ -47,7 +50,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
             error={error}
             addUserWithEnter={addUserWithEnter}
             totalUsers={totalUsers}
-            clearError={clearError}
+            // clearError={clearError}
         />
     )
 }

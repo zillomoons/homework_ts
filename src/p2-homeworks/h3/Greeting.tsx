@@ -7,14 +7,14 @@ type GreetingPropsType = {
     addUser: () => void // need to fix any
     error: boolean // need to fix any
     totalUsers: number // need to fix any
-    clearError: (e: FocusEvent<HTMLInputElement>) => void
+    // clearError: (e: FocusEvent<HTMLInputElement>) => void
     addUserWithEnter: (e: KeyboardEvent<HTMLInputElement>) => void
 }
 
 // презентационная компонента (для верстальщика)
 const Greeting: React.FC<GreetingPropsType> = (
     {name, setNameCallback, addUser, error,
-        totalUsers, clearError, addUserWithEnter} // деструктуризация пропсов
+        totalUsers, addUserWithEnter} // деструктуризация пропсов
 ) => {
     const inputClass = error ? s.error : s.inputBorder // need to fix with (?:)
 
@@ -24,9 +24,10 @@ const Greeting: React.FC<GreetingPropsType> = (
                    onChange={setNameCallback}
                    className={inputClass}
                    onKeyDown={addUserWithEnter}
-                   onBlur={addUser}
-                   onFocus={clearError}/>
-            <button className={s.addBtn} onClick={addUser}>add</button>
+                   onBlur={setNameCallback}
+                   // onFocus={clearError}
+            />
+            <button disabled={!name} className={s.addBtn} onClick={addUser}>add</button>
             <div className={s.errorMessage}>{error && 'Enter your name'}</div>
             <div>Total count of users: {totalUsers}</div>
         </div>
