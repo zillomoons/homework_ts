@@ -18,7 +18,8 @@
     padding: 10px 20px;
     border-radius: 10px 10px 10px 0px;
     color: white;
-    position:relative;
+    word-wrap: break-word;
+    /*position:relative;*/
 }
 .angle {
     height: 20px;
