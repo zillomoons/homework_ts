@@ -8,14 +8,15 @@ type PropsType = {
     time: string
 }
 
-export const Message: React.FC<PropsType> = (props) => {
+export const Message: React.FC<PropsType> = ({avatar, name, message, time}) => {
     return (
         <div className={styles.messageWrapper}>
-            <img src={props.avatar} alt="avatar"/>
+            <img src={avatar} alt="avatar"/>
+            <div className={styles.angle}></div>
             <div className={styles.message}>
-                <div className={styles.name}>{props.name}</div>
-                <div className={styles.text}>{props.message}</div>
-                <div className={styles.time}>{props.time}</div>
+                <div className={styles.name}>{name}</div>
+                <div className={styles.text}>{message}</div>
+                <div className={styles.time}>{time}</div>
             </div>
 
         </div>
