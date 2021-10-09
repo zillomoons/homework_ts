@@ -1,12 +1,13 @@
 .superInput {
-
+    border: 1px solid rgba(135, 149, 154, 0.4);
 }
 
 .errorInput {
-    border: 3px solid lime;
-    background: red;
+    border: 1px solid red;
+    background: rgba(255, 0, 0, 0.1);
 }
 
 .error {
     color: red;
+    text-align: start;
 }

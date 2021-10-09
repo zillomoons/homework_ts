@@ -1,7 +1,26 @@
-.default {
 
+.default {
+    background-color: #61dbfb;
+
+}
+.default:hover {
+    box-shadow: 0px 15px 20px rgba(97, 219, 251, 0.4);
+    transform: translateY(-7px);
 }
 
 .red {
     background: red;
+}
+.red:hover {
+    box-shadow: 0px 15px 20px rgba(255, 0, 0, 0.4);
+    transform: translateY(-7px);
+}
+button:disabled {
+    opacity: 0.9;
+    cursor: not-allowed;
+
+}
+button:disabled:hover{
+    transform: none;
+    box-shadow: none;
 }
