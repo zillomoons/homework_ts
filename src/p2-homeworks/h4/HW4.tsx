@@ -36,7 +36,6 @@ function HW4() {
                 <SuperInputText
                     className={s.blue} // проверьте, рабоет ли смешивание классов
                 />
-
                 {/*----------------------------------------------------*/}
 
                 <SuperButton>
@@ -49,7 +48,7 @@ function HW4() {
                     delete {/*// название кнопки попадёт в children*/}
                 </SuperButton>
 
-                <SuperButton disabled>
+                <SuperButton disabled={true}>
                     disabled
                 </SuperButton>
 

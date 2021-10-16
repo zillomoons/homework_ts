@@ -19,10 +19,11 @@ function Affairs(props: AffairsPropsType) {
         />
     ))
 
-    const setAll = () => props.setFilter('all') // need to fix
-    const setHigh = () => props.setFilter('high')
-    const setMiddle = () => props.setFilter('middle')
-    const setLow = () => props.setFilter('low')
+    // const setAll = () => props.setFilter('all') // need to fix
+    // const setHigh = () => props.setFilter('high')
+    // const setMiddle = () => props.setFilter('middle')
+    // const setLow = () => props.setFilter('low')
+    const filterHandler = (value: FilterType) => props.setFilter(value)
 
     // const onAll = styles.filterBtn + ' ' + (props.filter === 'all' ? styles.activeBtn : '');
     // const onHigh = styles.filterBtn + ' ' + (props.filter === 'high' ? styles.activeBtn : '');
@@ -43,10 +44,10 @@ function Affairs(props: AffairsPropsType) {
             {/*<button className={onMiddle} onClick={setMiddle}>Middle</button>*/}
             {/*<button className={onLow} onClick={setLow}>Low</button>*/}
 
-            <button className={setClass('all')} onClick={setAll}>All</button>
-            <button className={setClass('high')} onClick={setHigh}>High</button>
-            <button className={setClass('middle')} onClick={setMiddle}>Middle</button>
-            <button className={setClass('low')} onClick={setLow}>Low</button>
+            <button className={setClass('all')} onClick={()=>filterHandler('all')}>All</button>
+            <button className={setClass('high')} onClick={()=>filterHandler('high')}>High</button>
+            <button className={setClass('middle')} onClick={()=>filterHandler('middle')}>Middle</button>
+            <button className={setClass('low')} onClick={()=>filterHandler('low')}>Low</button>
         </div>
     )
 }

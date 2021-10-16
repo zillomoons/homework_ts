@@ -6,7 +6,7 @@ input {
     outline: none;
 }
 .inputBorder {
-    border: 1px solid #00ca4e;
+    border: 1px solid lightslategrey;
 }
 
 .error {
