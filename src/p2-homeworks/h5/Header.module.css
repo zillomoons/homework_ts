@@ -3,16 +3,27 @@
     justify-content: right;
     align-items: center;
     background-color: #4c5b6c;
-    /*height: 80px;*/
     color: white;
     gap: 25px;
     padding: 15px 45px;
+
 }
 .headerWrapper a{
     color: white;
     font-size: 24px;
     font-weight: bold;
+    animation-duration: 3s;
+    animation-name: slidein;
 }
 .headerWrapper a.activeLink{
     color: hotpink;
+}
+@keyframes slidein {
+    from {
+        margin-right: 100%;
+    }
+
+    to {
+        margin-right: 0%;
+    }
 }

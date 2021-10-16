@@ -14,7 +14,7 @@ function Header() {
         <div className={s.headerWrapper}>
             <NavLink to={PATH.PRE_JUNIOR} activeClassName={s.activeLink}>Pre-Junior</NavLink>
             <NavLink to={PATH.JUNIOR} activeClassName={s.activeLink}>Junior</NavLink>
-            <NavLink to={PATH.JUNIOR_PLUS} activeClassName={s.activeLink}>Junior Plus</NavLink>
+            <NavLink to={PATH.JUNIOR_PLUS} activeClassName={s.activeLink}>Junior+</NavLink>
             {/*// add NavLinks*/}
         </div>
     )
