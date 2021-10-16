@@ -1,8 +1,6 @@
 .messageWrapper{
     display: flex;
-    background-color: #8da9c2;
     padding: 50px;
-    /*gap: 20px;*/
     align-items: flex-end;
 }
 

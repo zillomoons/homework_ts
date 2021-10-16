@@ -11,9 +11,8 @@ const messageData = {
 function HW1() {
     return (
         <div>
-            <hr/>
-            homeworks 1
-
+            {/*<hr/>*/}
+            <h3>homework#1</h3>
             {/*should work (должно работать)*/}
 
             <Message

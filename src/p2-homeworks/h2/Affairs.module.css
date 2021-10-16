@@ -5,27 +5,39 @@
     width: 500px;
 }
 .affair {
-    border: 1px solid #97dcdc;
+    border: 1px solid hotpink;
     border-radius: 8px;
     padding: 5px;
     width: 200px;
-    text-align: center;
+    /*text-align: center;*/
     margin-bottom: 10px;
+}
+.affair:hover{
+    background-color: hotpink;
 }
 
 .deleteBtn {
     margin-bottom: 10px;
+    border: none;
+    padding: 2px 5px;
     border-radius: 5px;
     background-color: #ec4d4d;
+    color: white;
+    cursor: pointer;
 }
 .filterBtn {
-    margin-right: 5px;
+    margin: 0 5px;
+    padding: 5px;
+    border: none;
+    width: 70px;
     border-radius: 5px;
-    background-color: aliceblue;
-    margin-right: 5px;
+    background-color: #8da9c2;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
 }
 .activeBtn {
-    background: #61dafb;
+    background: hotpink;
 }
 .priority{
     display: flex;
