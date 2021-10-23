@@ -16,7 +16,7 @@
     animation-name: slidein;
 }
 .headerWrapper a.activeLink{
-    color: hotpink;
+    color: #61DBFB;
 }
 @keyframes slidein {
     from {

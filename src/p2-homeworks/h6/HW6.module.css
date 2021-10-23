@@ -1,0 +1,22 @@
+.editSpanWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.editSpan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    font-family: "Ink Free"
+
+}
+.editSpan span{
+    width: 200px;
+    border-bottom: 2px solid #6decaf;
+}
+.editSpan input{
+    width: 200px;
+}
