@@ -21,7 +21,7 @@ function HW6() {
 
             {/*should work (должно работать)*/}
             <div className={s.editSpanWrapper}>
-                <div className={s.editSpan}>
+                <div>
                     <SuperEditableSpan
                         value={value}
                         onChangeText={setValue}
