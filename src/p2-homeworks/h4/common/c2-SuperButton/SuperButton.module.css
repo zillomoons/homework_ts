@@ -55,7 +55,8 @@
 }
 
 .default {
-    background-color: #6decaf;
+    /*background-color: #6decaf;*/
+    background-color: #61dbfb;
 }
 .buttonStyles:disabled{
     z-index: -1;
