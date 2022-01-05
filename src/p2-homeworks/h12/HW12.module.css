@@ -1,23 +1,40 @@
-.dark {
-    background: dimgrey;
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
-.dark-text {
+.darkTheme {
+    background: dimgrey;
     color: aliceblue;
 }
 
-.red {
-    background: lightcoral;
-}
+/*.dark-text {*/
+/*   */
+/*}*/
 
-.red-text {
+.redTheme {
+    background: lightcoral;
     color: aqua;
 }
 
-.some {
-    background: lightgreen;
-}
+/*.red-text {*/
+/*    */
+/*}*/
 
-.some-text {
+.someTheme {
+    background: lightgreen;
     color: darkslateblue;
 }
+.bubbleGumTheme{
+    background: #ffc6ff;
+    color: #7209b7;
+}
+.neutralTheme{
+    background: #fff1e6;
+    color: #6b705c;
+}
+
+/*.some-text {*/
+/*    */
+/*}*/

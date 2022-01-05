@@ -11,3 +11,33 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.darkTheme {
+    background: dimgrey;
+    color: aliceblue;
+}
+
+/*.dark-text {*/
+/*   */
+/*}*/
+
+.redTheme {
+    background: lightcoral;
+    color: aqua;
+}
+
+/*.red-text {*/
+/*    */
+/*}*/
+
+.someTheme {
+    background: lightgreen;
+    color: darkslateblue;
+}
+.bubbleGumTheme{
+    background: #ffc6ff;
+    color: #7209b7;
+}
+.neutralTheme{
+    background: #fff1e6;
+    color: #6b705c;
+}
