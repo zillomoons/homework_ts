@@ -1,3 +1,10 @@
+.rangeBox{
+    display: flex;
+    margin-top: 25px;
+    align-items: center;
+    gap: 8px;
+}
+
 .range {
     display: block;
     width: 300px;
