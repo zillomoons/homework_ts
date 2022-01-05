@@ -1,5 +1,5 @@
 const initState: InitStateType = {
-    theme: 'darkTheme'
+    theme: 'bubbleGumTheme'
 };
 
 export const themeReducer = (state = initState, action: ChangeThemeActionType): InitStateType => { // fix any
